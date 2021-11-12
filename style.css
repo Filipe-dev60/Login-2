@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,200&family=Poppins:ital,wght@0,400;1,100&display=swap');
+:root{
+    --font-primary:poppins;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:gainsboro;
+}
+section{
+    width:100%;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+section .conteiner {
+    width:500px;
+    height:550px;
+    background:white;
+    border-radius:25px;
+}
+section .conteiner h1{
+    text-align:center;
+    font-size:35px;
+    font-family:var(--font-primary);
+    margin:20px;
+}
+section .conteiner h1::after{
+    content:"";
+    display:block;
+    width:80px;
+    background:black;
+    height:2px;
+    margin:0 auto;
+}
+section .conteiner .social{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+section .conteiner .social i{
+    margin:5px;
+    width:45px;
+    height:45px;
+    border:solid 1px black;
+    font-size:20px;
+    border-radius:27px;
+    text-align:center;
+    line-height:42px;
+    transition:background 0.6s linear;
+    cursor:pointer;
+}
+section .conteiner .social i:hover{
+    background:gray;
+    color:white;
+}
+section .conteiner h4{
+    text-align:center;
+    font-family:var(--font-primary);
+    margin:15px;
+}
+section .conteiner .content{
+    width:400px;
+    margin:0 auto;
+}
+section .conteiner .content label{
+    font-size:19px;
+    font-family: var(--font-primary);
+}
+section .conteiner .content input{
+    display:block;
+    width:100%;
+    height:40px;
+    font-size:20px;
+    font-family:sans-serif;
+}
+section .conteiner .checkbox{
+    width:400px;
+    margin:20px auto;
+    font-family:var(--font-primary);
+    padding-right:5px;
+}
+section .conteiner .checkbox span{
+    margin-left:5px;
+    font-size:16px;
+    font-weight:600px;
+}
+section .conteiner form button{
+    width:150px;
+    height:40px;
+    background:transparent;
+    display:block;
+    margin:0 auto;
+    border:1px solid black;
+    font-family:var(--font-primary);
+    font-size:18px;
+    transition:background 0.6s linear;
+    cursor:pointer;
+}
+section .conteiner form button:hover{
+    background:rgb(228, 226, 226);
+}
+section .conteiner .terms{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-around;
+    font-weight:900px;
+}
+@media screen and (max-width:540px){
+    section .conteiner {
+        width:100%;
+        border-radius:0px;
+    }
+}
+@media screen and (max-width:425px){
+    section .conteiner .content input {
+        width:90%;
+    }
+}
